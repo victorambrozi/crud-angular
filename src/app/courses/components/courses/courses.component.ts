@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Course } from 'src/app/messages/model/course';
+import { Course } from 'src/app/courses/model/course';
 
 @Component({
   selector: 'app-messages',
