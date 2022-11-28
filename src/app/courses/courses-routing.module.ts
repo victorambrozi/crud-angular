@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MessagesComponent } from './components/messages/messages/messages.component';
+import { CoursesComponent } from './components/courses/courses.component';
 
 const routes: Routes = [
   {
-    path: '', component: MessagesComponent
+    path: '', component: CoursesComponent
   }
 ];
 

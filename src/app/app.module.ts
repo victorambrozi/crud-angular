@@ -11,7 +11,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -23,7 +22,6 @@ import {MatInputModule} from '@angular/material/input';
     MatToolbarModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -8,7 +8,7 @@ const routes: Routes = [  {
 },
 {
   path:'messages',
-  loadChildren: () => import('./messages/messages.module').then(m => m.MessagesModule) // lazy loading
+  loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule) // lazy loading
 }];
 
 @NgModule({
