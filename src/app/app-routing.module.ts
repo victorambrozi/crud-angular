@@ -4,10 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [  {
   path: '',
   pathMatch: 'full',
-  redirectTo: 'messages',
+  redirectTo: 'courses',
 },
 {
-  path:'messages',
+  path:'courses',
   loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule) // lazy loading
 }];
 

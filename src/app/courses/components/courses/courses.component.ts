@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from 'src/app/courses/models/course';
+import { CoursesService } from '../../services/courses.service';
 
 @Component({
   selector: 'app-messages',
@@ -7,12 +8,13 @@ import { Course } from 'src/app/courses/models/course';
   styleUrls: ['./courses.component.scss'],
 })
 export class CoursesComponent implements OnInit {
-  courses: Course[] = [{
-    _id: "1", name: "Angular", category: 'frond-end'
-  }];
+  courses: Course[] = [];
   displayedColumns = ['name', 'category'];
 
-  constructor() {}
+  constructor(private courseService: CoursesService) {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.courses = this.courseService.list();
+  }
 }
